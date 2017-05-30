@@ -9,6 +9,7 @@ def listRecords():
         db2curry.execute("SELECT * FROM WEBPRDD.POSFTPUSRP")
         result = db2curry.fetchall()
         print(result)
+        print(type(result))
     except Exception as e:
         return 'Exception' + str(e)
 
